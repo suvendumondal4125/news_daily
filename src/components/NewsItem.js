@@ -9,7 +9,7 @@ export default class NewsItem extends Component {
           <img
             src={imgUrl}
             className="card-img-top"
-            style={{ height: "30%" }}
+            style={{ height: "35%" }}
             alt="..."
           />
           <div className="card-body">
@@ -19,8 +19,8 @@ export default class NewsItem extends Component {
           <a
             href={newsUrl}
             target="{_blank}"
-            className="btn btn-sm  btn-primary"
-
+            className="btn btn-sm mx-auto my-3 "
+            style={{ width: "15rem", backgroundColor : "#8A2BE2", color:"white" }}
           >
             Read More
           </a>

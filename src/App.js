@@ -4,6 +4,7 @@ import React, { Component } from 'react'
 import NavBar from './components/NavBar';
 import News from './components/News';
 import About from './components/About';
+import Logs from './components/Logs';
 import {
   BrowserRouter as Router,
   Routes,
@@ -24,6 +25,7 @@ export default class App extends Component {
           <Routes>
             <Route exact path='/' element={<News />}></Route>
             <Route exact path='/about' element={<About />}></Route>
+            <Route exact path='/logs' element={<Logs />}></Route>
           </Routes>
         </div>
       </Router>

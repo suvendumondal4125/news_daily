@@ -2,6 +2,17 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 export default class NavBar extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            btntext : "LogIn",
+        };
+    }
+    
+    logIn = () =>{
+        
+    }
     render() {
         return (
             <div>
@@ -33,8 +44,8 @@ export default class NavBar extends Component {
                                         About
                                     </Link>
                                 </li>
-
                             </ul>
+                            <button onClick={this.logIn} className="d-flex btn btn-primary btn-sm" type="submit">{this.btntext}</button>
                         </div>
                     </div>
                 </nav>
